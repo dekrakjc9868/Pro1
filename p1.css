@@ -22,11 +22,37 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.container:hover{
+  background-color:rgb(132, 106, 226);
+  border-radius: 10px;
+  opacity: .6;
+  
+}
+
+.centered{
+  position: absolute;
+  bottom: 8px;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 
 img{
   border-radius: 20px;
+  padding: 8px;
+
 }
 
 /* Style the navigation menu */
@@ -57,8 +83,10 @@ footer {
   color: white;
 }
 .topnav {
-  background-color: #333;
+  display: flex;
+  background-color: rgb(132, 106, 226);
   overflow: hidden;
+  align-items: baseline;
 }
 
 /* Style the links inside the navigation bar */
@@ -71,6 +99,7 @@ footer {
   font-size: 17px;
 }
 
+
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
@@ -79,6 +108,11 @@ footer {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: rgb(86, 82, 100);
   color: white;
+}
+
+#navdog{
+  height: 100px;
+  
 }
