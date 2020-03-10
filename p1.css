@@ -27,16 +27,13 @@ header {
   color: white;
 }
 
-
-
-
 .container {
   position: relative;
   text-align: center;
   color: white;
 }
 .container:hover{
-  background-color:rgb(132, 106, 226);
+  background-color:rgb(105, 152, 184);
   border-radius: 10px;
   opacity: .6;
   
@@ -59,6 +56,7 @@ img{
 ul {
   display: block;
   width: 60px;
+  
 }
 
 /* Style the list inside the menu */
@@ -83,8 +81,9 @@ footer {
   color: white;
 }
 .topnav {
+  
   display: flex;
-  background-color: rgb(132, 106, 226);
+  background-color: rgb(106, 178, 226);
   overflow: hidden;
   align-items: baseline;
 }
@@ -102,13 +101,13 @@ footer {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: rgb(98, 141, 158);
+  color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: rgb(86, 82, 100);
+  background-color: rgb(141, 192, 216);
   color: white;
 }
 
