@@ -20,7 +20,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   text-align: center;
@@ -31,6 +31,7 @@ header {
   position: relative;
   text-align: center;
   color: white;
+  
 }
 .container:hover{
   background-color:rgb(105, 152, 184);
@@ -81,7 +82,7 @@ footer {
   color: white;
 }
 .topnav {
-  
+  padding: 0; /*not working */
   display: flex;
   background-color: rgb(106, 178, 226);
   overflow: hidden;
