@@ -1,6 +1,7 @@
 
 html{
   box-sizing: border-box;
+  
 }
  
 body {
@@ -74,13 +75,7 @@ article {
   padding: 10px;
 }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+
 .topnav {
   padding: 0; /*not working */
   display: flex;
@@ -92,7 +87,7 @@ footer {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #f8f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -115,4 +110,36 @@ footer {
 #navdog{
   height: 100px;
   
+}
+/* icons for footer */
+#email{
+  height: 40px;
+  border-radius: 0;
+}
+
+#twit{
+  height: 40px;
+  border-radius: 0;
+}
+
+#facebook{
+  height: 40px;
+  border-radius: 0;
+}
+
+/* Style the footer
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+} */
+
+footer {
+  color: white;
+  background-color: rgb(128, 131, 133);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
 }
