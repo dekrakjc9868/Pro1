@@ -2,8 +2,9 @@
 
 <html lang="en">
 <head>
-<title>Dog Breedsss</title>
+<title>Happy Dog</title>
 <link rel="stylesheet" href="p1.css">
+<link rel='icon' href='favicon.png' type='image/x-icon' >
 
 <style>
 
@@ -14,39 +15,15 @@
     }
 
  
- 
   #head1{
       font-size: 30px;
       font-family: 'Comic Sans MS', 'Comic Sans', cursive;
       color: black;
   }
 
-  /* .outer {
-  border: 5px dotted rgb(214,129,137);
-  border-radius: 5px;
-  width: 450px;
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
-.float {
-  padding: 10px;
-  border: 5px solid rgba(214,129,137,.4);
-  border-radius: 5px;
-  background-color: rgba(233,78,119,.4);
-  color: #fff;
-  float: left;  
-  width: 200px;
-  margin: 0 20px 0 0;
-}
-
-img{
-  height: 100px;
-  width: 100px; */
-
   .toys {
     padding: 30px;
-    background-color: salmon;
+    background-color: rgba(138, 206, 238, 0.219);
     width: 400px;
     display: table;
     border-radius: 20px;
@@ -56,10 +33,15 @@ img{
 
 }
 
-img {
+/* img > .toys {
     vertical-align: middle;
     display: table-cell;
-    margin-right: 1em;
+    margin: 10px;
+    
+} */
+
+.iconphotos{
+  padding-right: 10px;
 }
 
 span {
@@ -72,15 +54,33 @@ span {
 
 </head>
 <body>
-    <div class="topnav">
-        <a href="index.html"> <img id="navdog" src="newdog.jpg" alt="CompanyLogo"></a>
-          <a class="active" href="new.html">New</a>
-          <a href="#news">Advice</a> 
-          <a href="#about">FAQ</a>
-          <a href="maps.html">Maps</a>
-          <a href="about.html">About</a>
-        </div>
+  <header>
+    <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
+    <a class="cta" href="index.html">Home</a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="new.html">Toys</a></li>
+            <li><a href="maps.html">Maps</a></li>
+            <li><a href="FAQ.html">Info</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
     
+    <p onclick="openNav()" class="menu cta">Menu</p>
+</header>
+
+<div id="mobile__menu" class="overlay">
+    <a class="close" onclick="closeNav()">&times;</a>
+    <div class="overlay__content">
+      <li><a href="new.html">Toys</a></li>
+      <li><a href="maps.html">Maps</a></li>
+      <li><a href="FAQ.html">Info</a></li>
+      <li><a href="about.html">About</a></li>
+    </div>
+</div>
+<script type="text/javascript" src="mobile.js"></script>
+
+
 
       <div class="holder">
         <div id="firstBar">
@@ -88,8 +88,10 @@ span {
         </div>
       </div>    
 
-       <div class="toys">
-        <span><img src="http://placehold.it/50x50" /></span>
+
+
+       <div class="toys"> <!--50x50-->
+        <span><img src="http://placehold.it/50x50" class="iconphotos"/></span>
     <span>
       <strong>Toy1</strong>
         here is some text to align with an image
@@ -101,7 +103,7 @@ span {
     </div>
 
     <div class="toys">
-      <span><img src="http://placehold.it/50x50" /></span>
+      <span><img src="http://placehold.it/50x50" class="iconphotos" /></span>
   <span>
       here is some text to align with an image
       here is some text to align with an image
@@ -112,7 +114,7 @@ span {
   </div>
 
   <div class="toys">
-    <span><img src="http://placehold.it/50x50" /></span>
+    <span><img src="http://placehold.it/50x50" class="iconphotos"/></span>
 <span>
     here is some text to align with an image
     here is some text to align with an image
@@ -123,7 +125,7 @@ span {
 </div>
 
 <div class="toys">
-  <span><img src="http://placehold.it/50x50" /></span>
+  <span><img src="http://placehold.it/50x50" class="iconphotos"/></span>
 <span>
   here is some text to align with an image
   here is some text to align with an image
@@ -134,7 +136,17 @@ span {
 </div>
 
 <footer>
-  <p>Footer</p>
+  <div class="footConatiner">
+    <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
+  </div>
+
+  <div class="footConatiner">
+    <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
+  </div>
+
+  <div class="footConatiner">
+    <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
+  </div>
 </footer>
 
 </body>
