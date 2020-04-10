@@ -26,9 +26,7 @@ nav {
   order: 1;
 }
 
-.nav__links a,
-.cta,
-.overlay__content a {
+.nav__links a, .cta, .overlay__content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #edf0f1;
@@ -139,7 +137,7 @@ nav {
 }
 
 
-/* END HEADER */
+
 html{
   box-sizing: border-box;
   
@@ -149,32 +147,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-#root{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  color: white;
+#dogphoto{
+  width: 100%;
 }
 
-.container {
+#backgroundcontainer{
   position: relative;
-  text-align: center;
-  color: white;
-  
+  margin-bottom: 0;
 }
-
-
-.centered{
+#textblock {
   position: absolute;
-  bottom: 8px;
-  right: 50%;
-  transform: translate(-50%, -50%);
+  top: 70px;
+  left: 20px;
+  font-size: 4vw;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+/* #homepagebox{
+  position: absolute;
+  bottom: 5px;
+  right: 50px;
+  background-color: rgba(88, 86, 86, 0.664);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  width: 200px;
+  font-size: 20px;
+} */
 
 
 #logophoto{
@@ -209,4 +210,161 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
+}
+
+
+/*maps */
+
+
+.mapouter{
+  padding: 10px;
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+    
+  }
+    
+.gmap_canvas {
+    overflow: hidden;
+    background: none
+    !important;
+    height:500px;
+    width:600px;
+    box-shadow: 0 0 3px;
+  }
+
+.total {
+  display: flex;
+  word-wrap: wrap;
+
+}
+
+.holder {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-left: 35px;
+  padding-top: 10px;
+  
+  }
+
+#text {
+  flex: 50%;
+  padding: 5px;
+  background-color: rgba(138, 206, 238, 0.219);
+  height: 450px;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 20px; 
+  
+}
+
+.map {
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/* end maps*/
+
+
+/*  */
+* {
+  box-sizing: border-box;
+}
+body {
+  
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row > .column {
+  padding: 8px;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aboutBottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(138, 206, 238, 0.219);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content{
+  background-color: rgba(138, 206, 238, 0.219);
+  padding: 10px;
+  border-radius: 8px;
+  
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* h2{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+} */
+
+#form{
+  padding-left:20px ;
+  font-size: 15px;
+}
+
+#bottomtext{
+  width: 750px;
+  
+}
+
+#search{
+  width: 100px;  height: 10px;
+}
+
+.content > img {
+  border-radius: 10px;
 }
