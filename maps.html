@@ -16,23 +16,31 @@
     justify-content: center;
     padding-bottom: 30px;
     padding-left: 20px;
-    padding-top: 10px;
-    padding-right: 20px;
+    padding-top: 0px;
     
+    /* height: 650px; */
+    position: relative;/*not working, divs are not being responsive */
+    box-shadow: 0 0 3px;
+     
     }
 
   #text {
     flex: 50%;
     padding: 5px;
     background-color: rgba(138, 206, 238, 0.219);
-    height: 450px;
     width: 90%;
     margin-top: 10px;
     border-radius: 20px; 
-    
+    /* padding-right: 30px; */
   }
 .content{
-  height: 300px;
+  height: 400px;
+  width: 770px;
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 30px;
+  /* padding-right: 30px; */
+  
 }
 .map {
  padding: 10px;
@@ -42,7 +50,14 @@ h1 {
     text-align: center;
     font-size: 20px;
   } 
- 
+  
+  .total {
+  display: flex;
+  word-wrap: wrap;
+  position: relative;
+  
+}
+
   </style>
 </head>
 <body>
@@ -82,21 +97,21 @@ h1 {
         </div>
         </div>
 
-         <div class="holder">
-          <div class="content">
-            <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
-          </div>
-        </div> 
+         
         <div class="holder">
           <div class="content">
-            <h3>My Work</h3>
-            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            <h3>Animal Hospitals + Adpoting</h3>
+            <p>Adopting an animal is such a rewarding experience. I encourage everyone that is interested in getting a dog to look into adoption. There are so many benefits to adoption. You will save a life of an animal. There are more than one million adoptable dogs and cats that have been killed in the Unitied States. </p> <br>
+            <p<>Not only will you save a life but it will cost you much less. Not only would the inital cost of the animal be less but you might also save on some training expenses!</p>
+            <p> </p>
           </div>
         </div> 
+        
         
         
     </div>
+
+
     <footer>
       <div class="footConatiner">
         <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
