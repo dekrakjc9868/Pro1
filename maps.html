@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<title>Happy Dog</title>
-<link rel="stylesheet" href="p1.css">
-<link rel='icon' href='favicon.png' type='image/x-icon' >
-<style>
-  footer{
-    position: absolute;  
-  }
-  
-  .holder {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-top: 0px;
-    
-    /* height: 650px; */
-    position: relative;/*not working, divs are not being responsive */
-    box-shadow: 0 0 3px;
-     
-    }
-
-  #text {
-    flex: 50%;
-    padding: 5px;
-    background-color: rgba(138, 206, 238, 0.219);
-    width: 90%;
-    margin-top: 10px;
-    border-radius: 20px; 
-    /* padding-right: 30px; */
-  }
-.content{
-  height: 400px;
-  width: 770px;
-  margin-top: 25px;
-  margin-right: 20px;
-  font-size: 30px;
-  /* padding-right: 30px; */
-  
-}
-.map {
- padding: 10px;
-  }
-
-h1 {
-    text-align: center;
-    font-size: 20px;
-  } 
-  
-  .total {
-  display: flex;
-  word-wrap: wrap;
-  position: relative;
-  
-}
-
-  </style>
+    <title>Happy Dog</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
+    <meta charset="UTF-8">
+    <style>
+        footer {
+            position: absolute;
+        }
+        
+        .holder {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-top: 0px;
+            /* height: 650px; */
+            position: relative;
+            /*not working, divs are not being responsive */
+        }
+        
+        #text {
+            flex: 50%;
+            padding: 5px;
+            background-color: rgba(138, 206, 238, 0.219);
+            width: 90%;
+            margin-top: 10px;
+            border-radius: 20px;
+            /* padding-right: 30px; */
+        }
+        
+        .content {
+            height: 400px;
+            width: 770px;
+            margin-top: 25px;
+            margin-right: 20px;
+            font-size: 25px;
+            /* padding-right: 30px; */
+        }
+        
+        .map {
+            padding: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .total {
+            display: flex;
+            word-wrap: wrap;
+            position: relative;
+        }
+        
+        h3 {
+            font-size: 35px;
+            padding-bottom: 15px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
-    <a class="cta" href="index.html">Home</a>
-    <nav>
-      <ul class="nav__links">
-          <li><a href="new.html">Toys</a></li>
-          <li><a href="maps.html">Maps</a></li>
-          <li><a href="FAQ.html">Info</a></li>
-          <li><a href="about.html">About</a></li>
-      </ul>
-  </nav>
-  
-  <p onclick="openNav()" class="menu cta">Menu</p>
-</header>
+    <header>
+        <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
+        <a class="cta" href="index.html">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
-<div id="mobile__menu" class="overlay">
-  <a class="close" onclick="closeNav()">&times;</a>
-  <div class="overlay__content">
-    <li><a href="new.html">Toys</a></li>
-    <li><a href="maps.html">Maps</a></li>
-    <li><a href="FAQ.html">Info</a></li>
-    <li><a href="about.html">About</a></li>
-  </div>
-</div>
-<script type="text/javascript" src="mobile.js"></script>
+        <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
 
-       
-  <div class="total"> 
-  <div class="map">
-      <div class="gmap_canvas">
-          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Eau%20Claire%20Animal%20Hospital%2C%202504%20Mall%20Dr%2C%20Eau%20Claire%2C%20WI%2054701&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-          <a href="https://www.enable-javascript.net/blog/divi-discount/">wordpress theme, divi.</a>
+    <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+            <ul>
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </div>
+    </div>
+    <script src="mobile.js"></script>
+
+    <div class="total">
+        <div class="map">
+            <div class="gmap_canvas">
+                <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Eau%20Claire%20Animal%20Hospital%2C%202504%20Mall%20Dr%2C%20Eau%20Claire%2C%20WI%2054701&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.enable-javascript.net/blog/divi-discount/">wordpress theme, divi.</a>
+            </div>
         </div>
 
-         
         <div class="holder">
-          <div class="content">
-            <h3>Animal Hospitals + Adpoting</h3>
-            <p>Adopting an animal is such a rewarding experience. I encourage everyone that is interested in getting a dog to look into adoption. There are so many benefits to adoption. You will save a life of an animal. There are more than one million adoptable dogs and cats that have been killed in the Unitied States. </p> <br>
-            <p<>Not only will you save a life but it will cost you much less. Not only would the inital cost of the animal be less but you might also save on some training expenses!</p>
-            <p> </p>
-          </div>
-        </div> 
-        
-        
-        
+            <div class="content">
+                <h3 id="h3">Animal Hospitals + Adpoting</h3>
+                <p>Adopting an animal is such a rewarding experience. I encourage everyone that is interested in getting a dog to look into adoption. There are so many benefits to adoption. You will save a life of an animal. There are more than one million adoptable dogs and cats that have been killed in the Unitied States. </p>
+                <br>
+                <p<>Not only will you save a life but it will cost you much less. Not only would the inital cost of the animal be less but you might also save on some training expenses!</p>
+                    <p> </p>
+            </div>
+        </div>
+
     </div>
 
-
     <footer>
-      <div class="footConatiner">
-        <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
-      </div>
+        <div class="footConatiner">
+            <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
+        </div>
 
-      <div class="footConatiner">
-        <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
-      </div>
+        <div class="footConatiner">
+            <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
+        </div>
 
-      <div class="footConatiner">
-        <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
-      </div>
+        <div class="footConatiner">
+            <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
+        </div>
     </footer>
 
 </body>
+
 </html>

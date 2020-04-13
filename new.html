@@ -1,135 +1,131 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<title>Happy Dog</title>
-<link rel="stylesheet" href="p1.css">
-<link rel='icon' href='favicon.png' type='image/x-icon' >
-
-<style>
-
-  .holder {
-    display: flex;
-    justify-content: center;
-  
-    }
-
- 
-  #head1{
-      font-size: 30px;
-      font-family: 'Comic Sans MS', 'Comic Sans', cursive;
-      color: black;
-  }
-
-  .toys {
-    padding: 30px;
-    background-color: rgba(138, 206, 238, 0.219);
-    width: 400px;
-    display: table;
-    border-radius: 20px;
-    margin: 10px;
-    margin-left:auto; 
-    margin-right:auto;
-    box-shadow: 0 0 3px;
-}
-
-
-.iconphotos{
-  /* padding-right: 10px; */
-  width: 70px;
-  padding-right: 8px;
-}
-
-span {
-    vertical-align: middle;
-    display: table-cell;
-}
-
-
-  </style>
+    <title>Happy Dog</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
+    <meta charset="UTF-8">
+    <style>
+        .holder {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #head1 {
+            font-size: 30px;
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: black;
+        }
+        
+        .toys {
+            padding: 30px;
+            background-color: rgba(138, 206, 238, 0.219);
+            width: 400px;
+            display: table;
+            border-radius: 20px;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 0 3px;
+        }
+        
+        .iconphotos {
+            /* padding-right: 10px; */
+            width: 70px;
+            padding-right: 8px;
+        }
+        
+        span {
+            vertical-align: middle;
+            display: table-cell;
+        }
+    </style>
 
 </head>
+
 <body>
-  <header>
-    <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
-    <a class="cta" href="index.html">Home</a>
-    <nav>
-        <ul class="nav__links">
-            <li><a href="new.html">Toys</a></li>
-            <li><a href="maps.html">Maps</a></li>
-            <li><a href="FAQ.html">Info</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    
-    <p onclick="openNav()" class="menu cta">Menu</p>
-</header>
+    <header>
+        <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
+        <a class="cta" href="index.html">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
-<div id="mobile__menu" class="overlay">
-    <a class="close" onclick="closeNav()">&times;</a>
-    <div class="overlay__content">
-      <li><a href="new.html">Toys</a></li>
-      <li><a href="maps.html">Maps</a></li>
-      <li><a href="FAQ.html">Info</a></li>
-      <li><a href="about.html">About</a></li>
-    </div>
-</div>
-<script type="text/javascript" src="mobile.js"></script>
+        <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
 
-
-
-      <div class="holder">
-        <div id="firstBar">
-          <h1 id="head1">This is where we post the new best dog toys!</h1>
+    <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+            <ul>
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </div>
-      </div>    
+    </div>
+    <script src="mobile.js"></script>
 
+    <div class="holder">
+        <div id="firstBar">
+            <h1 id="head1">This is where we post the best new dog toys!</h1>
+        </div>
+    </div>
 
-
-       <div class="toys"> <!--50x50-->
+    <div class="toys">
+        <!--50x50-->
         <span><img src="toy1.png" class="iconphotos"/></span>
-    <span>
+        <span>
       <strong>Kong: </strong>
        The kong has become one of the most popular dog toys there is. This toy will keep your dog busy for hours. Make sure to put a dash of peanut butter in the inside of it.
     </span>
     </div>
 
     <div class="toys">
-      <span><img src="toy2.jpg" class="iconphotos" /></span>
-  <span>
+        <span><img src="toy2.jpg" class="iconphotos" /></span>
+        <span>
       <strong>Dura Chew: </strong>
       the Nylabone Dura Chew is a peanut putter flavored dog bone. It is made for powerful dog chewers. This is a long lasting dog toy that helps clean your dogs teeth.
   </span>
-  </div>
+    </div>
 
-  <div class="toys">
-    <span><img src="toy3.jpg" class="iconphotos"/></span>
-<span>
+    <div class="toys">
+        <span><img src="toy3.jpg" class="iconphotos"/></span>
+        <span>
    <strong>Tiltz: </strong>
    Tiltz is a great toy that is a no-mess treat dispenser. This toy will keep your dog mentally and physically engaed for hours. Insert treats to extend playtime.
 </span>
-</div>
+    </div>
 
-<div class="toys">
-  <span><img src="toy4.jpg" class="iconphotos"/></span>
-<span>
+    <div class="toys">
+        <span><img src="toy4.jpg" class="iconphotos"/></span>
+        <span>
   This interactive dog toy makes exciting animal sounds when it is touched and moved. This toy will keep your dog plently busy. Motion activated, turns on and off automatically. Your dog will love the noises this makes!
 </span>
-</div>
+    </div>
 
-<footer>
-  <div class="footConatiner">
-    <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
-  </div>
+    <footer>
+        <div class="footConatiner">
+            <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
+        </div>
 
-  <div class="footConatiner">
-    <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
-  </div>
+        <div class="footConatiner">
+            <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
+        </div>
 
-  <div class="footConatiner">
-    <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
-  </div>
-</footer>
+        <div class="footConatiner">
+            <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
+        </div>
+    </footer>
 
 </body>
+
 </html>

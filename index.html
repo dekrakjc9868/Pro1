@@ -1,104 +1,102 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<title>Happy Dog</title>
-<link rel="stylesheet" href="p1.css">
-<link rel='icon' href='favicon.png' type='image/x-icon' >
+    <title>Happy Dog</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
+    <meta charset="UTF-8">
 
-
-<style>
-.content{
-  box-shadow: 0 0 3px;
-}
-</style>
-
+    <style>
+        .content {
+            box-shadow: 0 0 3px;
+        }
+    </style>
 
 </head>
 
 <body>
 
-  <header>
-    <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
-    <a class="cta" href="index.html">Home</a>
-    <nav>
-      <ul class="nav__links">
-          <li><a href="new.html">Toys</a></li>
-          <li><a href="maps.html">Maps</a></li>
-          <li><a href="FAQ.html">Info</a></li>
-          <li><a href="about.html">About</a></li>
-      </ul>
-  </nav>
-  
-  <p onclick="openNav()" class="menu cta">Menu</p>
-</header>
+    <header>
+        <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
+        <a class="cta" href="index.html">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
-<div id="mobile__menu" class="overlay">
-  <a class="close" onclick="closeNav()">&times;</a>
-  <div class="overlay__content">
-    <li><a href="new.html">Toys</a></li>
-    <li><a href="maps.html">Maps</a></li>
-    <li><a href="FAQ.html">Info</a></li>
-    <li><a href="about.html">About</a></li>
-  </div>
-</div>
-<script type="text/javascript" src="mobile.js"></script>
+        <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
 
+    <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+            <ul>
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="mobile.js"></script>
 
     <div id="backgroundcontainer">
-      <img src="dog.jpeg" id="dogphoto" alt="backgroundphoto">
-      <div id="textblock">
-      <h2>Happy Dog</h2>
-      <p>Every Dog Deserves To Be Happy</p>
+        <img src="dog.jpeg" id="dogphoto" alt="backgroundphoto">
+        <div id="textblock">
+            <h2>Happy Dog</h2>
+            <p>Every Dog Deserves To Be Happy</p>
+        </div>
     </div>
-    </div>
-
 
     <div id="customersfav">
-      <p id="favtitle"> Our Favorites</p>
+        <p id="favtitle"> Our Favorites</p>
     </div>
     <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src="smartbone.jpeg" alt="Photo of treat" style="width:100%">
-          <h3 class="favhead">Smartbone</h3>
-          <strong>Price: </strong>
-          $11.99
+        <div class="column">
+            <div class="content">
+                <img src="smartbone.jpeg" alt="Photo of treat" style="width:100%">
+                <h3 class="favhead">Smartbone</h3>
+                <strong>Price: </strong> $11.99
+            </div>
         </div>
-      </div>
 
-      <div class="column">
-        <div class="content">
-          <img src="max.jpg" alt="Photo of joint pills" style="width:100%">
-          <h3 class="favhead">Joint Health</h3>
-          <strong>Price: </strong>
-          $53.99
+        <div class="column">
+            <div class="content">
+                <img src="max.jpg" alt="Photo of joint pills" style="width:100%">
+                <h3 class="favhead">Joint Health</h3>
+                <strong>Price: </strong> $53.99
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="bully.jpg" alt="Photo treat" style="width:100%">
-          <h3 class="favhead">Bully Slices</h3>
-          <strong>Price: </strong>
-          $10.99
+        <div class="column">
+            <div class="content">
+                <img src="bully.jpg" alt="Photo treat" style="width:100%">
+                <h3 class="favhead">Bully Slices</h3>
+                <strong>Price: </strong> $10.99
+            </div>
         </div>
-      </div>
-     
+
     </div>
 
-      <footer>
+    <footer>
         <div class="footConatiner">
-          <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
+            <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
         </div>
 
         <div class="footConatiner">
-          <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
+            <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
         </div>
 
         <div class="footConatiner">
-          <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
+            <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
         </div>
-      </footer>
+    </footer>
 
 </body>
+
 </html>

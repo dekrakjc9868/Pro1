@@ -1,161 +1,150 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<title>Happy Dog</title>
-<link rel="stylesheet" href="p1.css">
-<link rel='icon' href='favicon.png' type='image/x-icon' >
-<link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+    <title>Happy Dog</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
+    <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <style>
+        #head1 {
+            display: flex;
+            justify-content: center;
+            font-size: 37px;
+            font-family: 'coiny';
+            color: black;
+            text-decoration: underline;
+        }
+        
+        .bucket {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .faqbox {
+            text-align: center;
+            padding: 8px;
+            background-color: rgba(138, 206, 238, 0.418);
+            width: 400px;
+            height: 440px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 3px;
+        }
+        
+        #boxtitle {
+            font-size: 30px;
+            font-family: 'coiny';
+            margin-top: 5px;
+            /* text-decoration: underline; */
+        }
+        
+        .websites {
+            font-size: 25px;
+            padding: 13px;
+        }
+        
+        footer {
+            position: absolute;
+        }
 
-<style>
-#head1{
-    display: flex;
-    justify-content: center;
-    font-size: 37px;
-    font-family: 'coiny';
-    color: black;
-    text-decoration: underline;
-  }
-
-  .bucket{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-  }
-  .faqbox{
-      
-    text-align: center;
-    padding: 8px;
-    background-color: rgba(138, 206, 238, 0.418);
-    width: 400px;
-    height: 440px;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 3px;
-    
-  }
-
-  #boxtitle{
-    font-size: 30px;
-    font-family: 'coiny';
-    margin-top: 5px;
-    /* text-decoration: underline; */
-
-  }
-
-  .websites{
-      font-size: 25px;
-      padding: 13px;
-      
-  }
-
-  footer{
-    position: absolute;
-  }
-
-
-
-</style>
-
+        
+    </style>
 
 </head>
+
 <body>
-  <header>
-    <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
-    <a class="cta" href="index.html">Home</a>
-    <nav>
-      <ul class="nav__links">
-          <li><a href="new.html">Toys</a></li>
-          <li><a href="maps.html">Maps</a></li>
-          <li><a href="FAQ.html">Info</a></li>
-          <li><a href="about.html">About</a></li>
-      </ul>
-  </nav>
-  
-  <p onclick="openNav()" class="menu cta">Menu</p>
-</header>
+    <header>
+        <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
+        <a class="cta" href="index.html">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
 
-<div id="mobile__menu" class="overlay">
-  <a class="close" onclick="closeNav()">&times;</a>
-  <div class="overlay__content">
-    <li><a href="new.html">Toys</a></li>
-    <li><a href="maps.html">Maps</a></li>
-    <li><a href="FAQ.html">Info</a></li>
-    <li><a href="about.html">About</a></li>
-  </div>
-</div>
-<script type="text/javascript" src="mobile.js"></script>
+        <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
 
-  <div>
-      <h1 id="head1">Resources To Keep Your Pup Happy</h1>
-  </div>
+    <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+            <ul style="list-style-type: none;">
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="mobile.js"></script>
 
-  <div class="bucket">
+    <div>
+        <h1 id="head1">Resources To Keep Your Pup Happy</h1>
+    </div>
 
-    <div class="faqbox">
-        <p id="boxtitle">Toy Websites</p>
-        <div id="faqboxDiv">
-            <p class="websites"><a href="https://www.chewy.com/?gclid=EAIaIQobChMI26LFm7ve6AIVQsDICh2NNgzeEAAYAyAAEgIry_D_BwE"> Chewy</a></p>
-            <p class="websites"><a href="https://www.orvis.com/dog-toys?adv=586833&cm_mmc=Orvisnonbrand-_-Nontm-x-pets-us-bmm-_-Nontm-x-petsdogs-treats-x-x-x-_-doggie%20toys&gclid=EAIaIQobChMI26LFm7ve6AIVQsDICh2NNgzeEAAYBCAAEgIFR_D_BwE"> Orivs</a></p>
-            <p class="websites"><a href="https://www.dogtuff.com/"> DogTuff</a></p>
-            <p class="websites"><a href="www.Kongcompany.com"> Kong Company</a></p>
-            <p class="websites"><a href="www.petmountain.com"> Pet Mountain</a></p>
-            <p class="websites"><a href="www.bullymake.com"> Bully Make</a></p>
+    <div class="bucket">
 
+        <div class="faqbox">
+            <p id="boxtitle">Toy Websites</p>
+            <div id="faqboxDiv">
+                <p class="websites"><a href="https://www.chewy.com/?gclid=EAIaIQobChMI26LFm7ve6AIVQsDICh2NNgzeEAAYAyAAEgIry_D_BwE"> Chewy</a></p>
+                <p class="websites"><a href="https://www.orvis.com/dog-toys?adv=586833&cm_mmc=Orvisnonbrand-_-Nontm-x-pets-us-bmm-_-Nontm-x-petsdogs-treats-x-x-x-_-doggie%20toys&gclid=EAIaIQobChMI26LFm7ve6AIVQsDICh2NNgzeEAAYBCAAEgIFR_D_BwE"target=_blank> Orivs</a></p>
+                <p class="websites"><a href="https://www.dogtuff.com/"target=_blank> DogTuff</a></p>
+                <p class="websites"><a href="https://www.Kongcompany.com"target=_blank> Kong Company</a></p>
+                <p class="websites"><a href="https://www.petmountain.com"target=_blank> Pet Mountain</a></p>
+                <p class="websites"><a href="https://www.bullymake.com"target=_blank> Bully Make</a></p>
+                
+            </div>
+        </div>
+
+        <div class="faqbox">
+            <p id="boxtitle">Training Websites</p>
+            <div id="faqboxDiv">
+                <p class="websites"><a href="https://www.red-star-kennel.com"target=_blank> Red Star Kennel</a></p>
+                <p class="websites"><a href="https://www.thegreatcoursesplus.com"target=_blank> Great Courses</a></p>
+                <p class="websites"><a href="https://www.tromplo.com"target=_blank> Tromplo</a></p>
+                <p class="websites"><a href="https://www.pawsma.com"target=_blank> Pawsma</a></p>
+                <p class="websites"><a href="https://www.andreaarden.com"target=_blank> Andrea Arden</a></p>
+                <p class="websites"><a href="https://www.apdt.com"target=_blank> APDT</a></p>
+
+            </div>
+        </div>
+
+        <div class="faqbox">
+            <p id="boxtitle">Canine Healthcare</p>
+            <div id="faqboxDiv">
+                <p class="websites"><a href="https://www.petnav.net"target=_blank> PetNav</a></p>
+                <p class="websites"><a href="https://www.1800petmeds.com"target=_blank> Pet Meds</a></p>
+                <p class="websites"><a href="https://https://www.justanswer.com/sip/veterinary?r=ppc|ga|27|Pets-SQR-Search-BMM|Veterinary-General|&JPKW=%2Bcare%20for%20a%20%2Bdog&JPDC=S&JPST=&JPAD=398182842694&JPMT=b&JPNW=g&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=7310061487&agid=81677701878&fiid=&tgtid=kwd-426647577278&ntw=g&dvc=c&r=ppc|ga|27|Pets-SQR-Search-BMM|Veterinary-General|&JPKW=%2Bcare%20for%20a%20%2Bdog&JPDC=S&JPST=&JPAD=398182842694&JPMT=b&JPNW=g&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=7310061487&agid=81677701878&fiid=&tgtid=kwd-426647577278&ntw=g&dvc=c&gclid=EAIaIQobChMIvbO8rb7e6AIVh5WzCh2Sxw6SEAAYAyAAEgKAZfD_BwE"target=_blank> Online Vet</a></p>
+                <p class="websites"><a href="https://https://pets.webmd.com/dogs/default.htm"target=_blank> WebMD</a></p>
+                <p class="websites"><a href="https://doghealth.com"target=_blank> Dog Health</a></p>
+                <p class="websites"><a href="https://https://www.akc.org/expert-advice/health/"target=_blank> Canine Health</a></p>
+
+            </div>
         </div>
     </div>
 
-    <div class="faqbox">
-        <p id="boxtitle">Training Websites</p>
-        <div id="faqboxDiv">
-          <p class="websites"><a href="www.red-star-kennel.com"> Red Star Kennel</a></p>
-          <p class="websites"><a href="www.thegreatcoursesplus.com"> Great Courses</a></p>
-          <p class="websites"><a href="www.tromplo.com"> Tromplo</a></p>
-          <p class="websites"><a href="www.pawsma.com"> Pawsma</a></p>
-          <p class="websites"><a href="www.andreaarden.com"> Andrea Arden</a></p>
-          <p class="websites"><a href="www.apdt.com"> APDT</a></p>
-
-      </div>
-    </div>
-
-    <div class="faqbox">
-        <p id="boxtitle">Canine Healthcare</p>
-        <div id="faqboxDiv">
-          <p class="websites"><a href="www.petnav.net"> PetNav</a></p>
-          <p class="websites"><a href="www.1800petmeds.com"> Pet Meds</a></p>
-          <p class="websites"><a href="https://www.justanswer.com/sip/veterinary?r=ppc|ga|27|Pets-SQR-Search-BMM|Veterinary-General|&JPKW=%2Bcare%20for%20a%20%2Bdog&JPDC=S&JPST=&JPAD=398182842694&JPMT=b&JPNW=g&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=7310061487&agid=81677701878&fiid=&tgtid=kwd-426647577278&ntw=g&dvc=c&r=ppc|ga|27|Pets-SQR-Search-BMM|Veterinary-General|&JPKW=%2Bcare%20for%20a%20%2Bdog&JPDC=S&JPST=&JPAD=398182842694&JPMT=b&JPNW=g&JPAF=txt&JPRC=1&JPCD=&JPOP=&cmpid=7310061487&agid=81677701878&fiid=&tgtid=kwd-426647577278&ntw=g&dvc=c&gclid=EAIaIQobChMIvbO8rb7e6AIVh5WzCh2Sxw6SEAAYAyAAEgKAZfD_BwE"> Online Vet</a></p>
-          <p class="websites"><a href="https://pets.webmd.com/dogs/default.htm"> WebMD</a></p>
-          <p class="websites"><a href="doghealth.com"> Dog Health</a></p>
-          <p class="websites"><a href="https://www.akc.org/expert-advice/health/"> Canine Health</a></p>
-
-
-      </div>
-    </div>
- </div>
-
-
-
-
-
-
-
-
-
-  
-      <footer>
+    <footer>
         <div class="footConatiner">
-          <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
+            <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
         </div>
 
         <div class="footConatiner">
-          <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
+            <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
         </div>
 
         <div class="footConatiner">
-          <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
+            <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
         </div>
-      </footer>
+    </footer>
 
 </body>
+
 </html>

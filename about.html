@@ -1,215 +1,247 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-<title>Happy Dog</title>
-<link rel="stylesheet" href="p1.css">
-<link rel='icon' href='favicon.png' type='image/x-icon' >
 
+<head>
+    <title>Happy Dog</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel='icon' href='favicon.png' type='image/x-icon'>
+    <meta charset="UTF-8">
 </head>
-  <body>
+
+<body>
 
     <header>
-      <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
-      <a class="cta" href="index.html">Home</a>
-      <nav>
-        <ul class="nav__links">
+        <a class="logo"><img src="logo.png" id="logophoto" alt="logo"></a>
+        <a class="cta" href="index.html">Home</a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="new.html">Toys</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="FAQ.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <p onclick="openNav()" class="menu cta">Menu</p>
+    </header>
+
+    <div id="mobile__menu" class="overlay">
+        <a class="close" onclick="closeNav()">&times;</a>
+        <div class="overlay__content">
+        <ul>
             <li><a href="new.html">Toys</a></li>
             <li><a href="maps.html">Maps</a></li>
             <li><a href="FAQ.html">Info</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-    </nav>
-    
-    <p onclick="openNav()" class="menu cta">Menu</p>
-</header>
-
-<div id="mobile__menu" class="overlay">
-    <a class="close" onclick="closeNav()">&times;</a>
-    <div class="overlay__content">
-      <li><a href="new.html">Toys</a></li>
-      <li><a href="maps.html">Maps</a></li>
-      <li><a href="FAQ.html">Info</a></li>
-      <li><a href="about.html">About</a></li>
+        </div>
     </div>
-</div>
-  <script type="text/javascript" src="mobile.js"></script>
-    
-   
+    <script src="mobile.js"></script>
 
-  <!--CSS for About tab-->
-  <style>
-    /* * {
-      box-sizing: border-box;
-    }
-    body {
-      
-      font-family: Arial;
-    }
-    
-    h1 {
-      font-size: 50px;
-      word-break: break-all;
-    }
-    
-    .row {
-      display: flex;
-      justify-content: center;
-      margin: 8px -16px;
-    }
-    
-    /* Add padding BETWEEN each column */
-    .row > .column {
-      padding: 8px;
-    }
-    
-    
-    .column {
-      float: left;
-      width: 25%;
-      
-    }
-
-    
-    /* Clear floats after rows */ 
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    .aboutBottom {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      background-color: rgba(138, 206, 238, 0.219);
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .content{
-      background-color: rgba(138, 206, 238, 0.219);
-      padding: 13px;
-      border-radius: 8px;
-      
-    }
-   
-    
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 900px) {
-      .column {
-        width: 50%;
-      }
-    }
-    
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        width: 100%;
-      }
-    }
-    h2{
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        text-align: center;
-    }
-
-    #form{
-      padding-left:20px ;
-      font-size: 15px;
-    }
-
-    #bottomtext{
-      width: 750px;    
-    }
-   
-    #search{
-      width: 100px;  height: 10px;
-    }
-
-    .content > img {
-      border-radius: 10px;
-    }
-
-    footer{
-      margin-top: 5px;
-    }
-     */
+    <!--CSS for About tab-->
+    <style>
+        .ml6 {
+            left: 40%;
+            right: 60%;
+            position: relative;
+            font-weight: 900;
+            font-size: 3.3em;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        
+        .ml6 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+        
+        .ml6 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+        /* Add padding BETWEEN each column */
+        
+        .row > .column {
+            padding: 8px;
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+        }
+        /* Clear floats after rows */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .aboutBottom {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgba(138, 206, 238, 0.219);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .content {
+            background-color: rgba(138, 206, 238, 0.219);
+            padding: 13px;
+            border-radius: 8px;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+        
+        h2 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+        }
+        
+        #form {
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        
+        #bottomtext {
+            width: 750px;
+        }
+        
+        #search {
+            width: 100px;
+            height: 10px;
+        }
+        
+        .content > img {
+            border-radius: 10px;
+        }
+        
+        footer {
+            margin-top: 5px;
+        }
+        
+        */
     </style>
-    <!--End CSS  about me code-->
+
     </head>
 
     <body>
-    <div class="main">
-    
-    <h2 style="font-size: 35px;">About Us</h2>
+        <div class="main">
 
-    
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src="grace1.jpeg" alt="Photo of dog" style="width:100%">
-          <h3>Staff</h3>
-          <p>Here at Happy Dog we are all major dog lovers (obviously). We have been working around the globe to provide resources for all dog owners. </p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-        <img src="maisy.jpeg" alt="Photo of dog" style="width:100%">
-          <h3>Our Dogs</h3>
-          <p>Maisy (brown golden retriever) and Gracie (yellow british lab) were best friends their whole life. Maisy being 3 years old and Gracie passing away a couple months ago. The loss of Gracie is what got us into this field.</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-        <img src="luna.jpeg" alt="Photo of dog" style="width:100%">
-          <h3>Luna</h3>
-          <p>Luna is the newest member of our family. We chose to adopt her locally. We plan for Luna to be a therapy dog and to hopefully bring her to local hospitals to be played with by the 
-            patients.</p>
-        </div>
-      </div>
-     
-    </div>
-    
-    <div class="aboutBottom">
+            <!-- <h2 style="font-size: 35px;">About Us</h2> -->
 
-    <div id="bottomtext">
-      <h3>Our Mission</h3>
-      <p>We want to provide as many resources that we can to our community. We will be working to keep updating our site to bring better sources.</p>
-      <p>If you have any personal questions you like to ask us please send us an email. We would love to try to help and connect you with the best resources</p>
-    </div>
-    
-    <div id="form">
-      <form action="/action_page.php">
-        <label for="fname">First/Last name:</label><br>
-        <input type="text" id="fname" name="fname" ><br>
-        <label for="lname">Email:</label><br>
-        <input type="text" id="lname" name="lname" ><br><br>
-        <input type="submit" id="search" value="Submit" >
-      </form> 
-      
-    </div>
+            <h1 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">About Us</span>
+      </span>
+    </h1>
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    </div>
+            <script>
+                // Wrap every letter in a span
+                var textWrapper = document.querySelector('.ml6 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-  
-    <footer>
-      <div class="footConatiner">
-        <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
-      </div>
+                anime.timeline({
+                        loop: false
+                    })
+                    .add({
+                        targets: '.ml6 .letter',
+                        translateY: ["1.1em", 0],
+                        translateZ: 0,
+                        duration: 1500,
+                        delay: (el, i) => 50 * i
+                    });
+            </script>
 
-      <div class="footConatiner">
-        <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
-      </div>
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="grace1.jpeg" alt="Photo of dog" style="width:100%">
+                        <h3>Staff</h3>
+                        <p>Here at Happy Dog we are all major dog lovers (obviously). We have been working around the globe to provide resources for all dog owners. </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="maisy.jpeg" alt="Photo of dog" style="width:100%">
+                        <h3>Our Dogs</h3>
+                        <p>Maisy (brown golden retriever) and Gracie (yellow british lab) were best friends their whole life. Maisy being 3 years old and Gracie passing away a couple months ago. The loss of Gracie is what got us into this field.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="luna.jpeg" alt="Photo of dog" style="width:100%">
+                        <h3>Luna</h3>
+                        <p>Luna is the newest member of our family. We chose to adopt her locally. We plan for Luna to be a therapy dog and to hopefully bring her to local hospitals to be played with by the patients.
+                        </p>
+                    </div>
+                </div>
 
-      <div class="footConatiner">
-        <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
-      </div>
-    </footer>
+            </div>
 
-</body>
+            <div class="aboutBottom">
+
+                <div id="bottomtext">
+                    <h3>Our Mission</h3>
+                    <p>We want to provide as many resources that we can to our community. We will be working to keep updating our site to bring better sources.</p>
+                    <p>If you have any personal questions you like to ask us please send us an email. We would love to try to help and connect you with the best resources</p>
+                </div>
+
+                <div id="form">
+                    <form action="/action_page.php">
+                        <label for="fname">First/Last name:</label>
+                        <br>
+                        <input type="text" id="fname" name="fname">
+                        <br>
+                        <label for="lname">Email:</label>
+                        <br>
+                        <input type="text" id="lname" name="lname">
+                        <br>
+                        <br>
+                        <input type="submit" id="search" value="Submit">
+                    </form>
+
+                </div>
+
+            </div>
+
+            <footer>
+                <div class="footConatiner">
+                    <a href="mailto:dekraker37@gmail.com"> <img id="email" src="email.png" alt="EmailLogo"></a>
+                </div>
+
+                <div class="footConatiner">
+                    <a href="https://twitter.com/dog_rates"> <img id="twit" src="twit.png" alt="TwitterLogo"></a>
+                </div>
+
+                <div class="footConatiner">
+                    <a href="https://www.facebook.com/Dogslovers12345/"> <img id="facebook" src="FB.png" alt="Facebook logo"></a>
+                </div>
+            </footer>
+
+    </body>
+
 </html>
